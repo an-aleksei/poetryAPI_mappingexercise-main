@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <title>Sonnet Sayer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <figure>
+            <img class="figure-img img-thumbnail mx-auto d-block" src="assets/amy_levy_1.jpeg" alt="Amy Levy">
+    <figcaption class="figure-caption text-center">Amy Levy, 1861 - 1889</figcaption>
+    </figure>
+        <div class="card">
+            <div class="card-title">
+        <select id="poem-picker" class="form-select" onchange="selectPoem(poemHolder, this.value);" aria-label="Default select example">
+            <option selected>Pick a poem</option>
+        
+          </select>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                <select id="author-picker" class="form-select" aria-label="Default select example">
+                    <option selected>Pick an author</option> 
+                </select>
+                
+        </div>
+        <div class="card-body">
+            
+    <p id="poem">
+
+    </p>
+    
+    <!-- <button id="button" onclick="selectPoem(poemHolder);">new poem</button> -->
+
+<!-- <ul id="listing">
+
+</ul> -->
+</div>
+</div>
+
+<footer id="poem-count"></footer>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
